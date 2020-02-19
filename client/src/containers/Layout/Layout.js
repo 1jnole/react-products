@@ -11,19 +11,20 @@ class ContainerLayout extends Component {
     render() {
         return (
             <div>
-                <Layout>
-                    <Router>
+                <Router>
+                    <Layout>
                         <Header>
                             <HeaderContent/>
                         </Header>
-                        <Switch>
-                            <Route exact path="/" component={Products}/>
-                            <Route exact path="/products/new/" component={NewProduct}/>
-                        </Switch>
-                    </Router>
-                    <Content> </Content>
-                    <Footer> </Footer>
-                </Layout>
+                        <Content>
+                            <Switch>
+                                <Route exact path="/" component={Products}/>
+                                <Route exact path="/products/new/" component={NewProduct}/>
+                            </Switch>
+                        </Content>
+                        <Footer> </Footer>
+                    </Layout>
+                </Router>
             </div>
         )
     }
