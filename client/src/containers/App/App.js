@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import './App.scss';
 import 'antd/dist/antd.css';
 import Layout from '../Layout/Layout';
