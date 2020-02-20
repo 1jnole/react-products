@@ -1,6 +1,7 @@
 import React from "react";
 import {Button, Row, Col, Icon} from 'antd';
 import {Link} from "react-router-dom";
+import './HeaderContent.scss';
 
 
 const HeaderContent = () => {
